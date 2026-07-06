@@ -2,6 +2,10 @@ name: X86_64 OpenWrt
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - openwrt-router-vm300
+      - main
   schedule:
     - cron: 0 19 * * *
 
